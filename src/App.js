@@ -13,6 +13,11 @@ import {
 } from "./style";
 
 const App = () => {
+  const users = [
+    { id: Math.random(), name: "Anderson", age: 28 },
+    { id: Math.random(), name: "Maria", age: 21 },
+  ];
+
   return (
     <Container>
       <Image alt="logo-imagem" src={People} />
@@ -28,6 +33,14 @@ const App = () => {
         <Button>
           Cadastrar <img alt="seta" src={Arrow} />
         </Button>
+
+        <ul>
+          {users.map((user) => (
+            <li key={user.id}>
+              {user.name} - {user.age}
+            </li>
+          ))}
+        </ul>
       </ContainerItens>
     </Container>
   );
