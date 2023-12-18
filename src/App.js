@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import People from "./assets/people.svg";
 import Arrow from "./assets/arrow.svg";
 import Trash from "./assets/trash.svg";
@@ -16,19 +16,18 @@ import {
 
 const App = () => {
   const [users, setUsers] = useState([]);
-  const [name, setName] = useState([]);
-  const [age, setAge] = useState([]);
+  const inputName = useRef();
+  const inputAge = useRef();
 
   const addNewUser = () => {
-    setUsers([...users, { id: Math.random(), name, age }]);
-  };
-
-  const changeInputName = (event) => {
-    setName(event.target.value);
-  };
-
-  const changeInputAge = (event) => {
-    setAge(event.target.value);
+    setUsers([
+      ...users,
+      {
+        id: Math.random(),
+        name: inputName.current.value,
+        age: inputAge.current.value,
+      },
+    ]);
   };
 
   return (
@@ -38,10 +37,10 @@ const App = () => {
         <H1>Olá</H1>
 
         <InputLabel>Nome</InputLabel>
-        <Input onChange={changeInputName} placeholder="Nome" />
+        <Input ref={inputName} placeholder="Nome" />
 
         <InputLabel>Idade</InputLabel>
-        <Input onChange={changeInputAge} placeholder="Idade" />
+        <Input ref={inputAge} placeholder="Idade" />
 
         <Button onClick={addNewUser}>
           Cadastrar <img alt="seta" src={Arrow} />
