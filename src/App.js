@@ -20,17 +20,16 @@ const App = () => {
   const [age, setAge] = useState([]);
 
   const addNewUser = () => {
-    setUsers([{id: Math.random(), name, age}]);
+    setUsers([...users, { id: Math.random(), name, age }]);
   };
 
   const changeInputName = (event) => {
-    setName(event.target.value)
+    setName(event.target.value);
   };
 
   const changeInputAge = (event) => {
-    setAge(event.target.value)
+    setAge(event.target.value);
   };
-
 
   return (
     <Container>
