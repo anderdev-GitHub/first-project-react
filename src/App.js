@@ -16,10 +16,21 @@ import {
 
 const App = () => {
   const [users, setUsers] = useState([]);
+  const [name, setName] = useState([]);
+  const [age, setAge] = useState([]);
 
   const addNewUser = () => {
-    setUsers([{ id: Math.random(), name: "Anderson", age: 28}]);
+    setUsers([{id: Math.random(), name, age}]);
   };
+
+  const changeInputName = (event) => {
+    setName(event.target.value)
+  };
+
+  const changeInputAge = (event) => {
+    setAge(event.target.value)
+  };
+
 
   return (
     <Container>
@@ -28,10 +39,10 @@ const App = () => {
         <H1>Olá</H1>
 
         <InputLabel>Nome</InputLabel>
-        <Input placeholder="Nome" />
+        <Input onChange={changeInputName} placeholder="Nome" />
 
         <InputLabel>Idade</InputLabel>
-        <Input placeholder="Idade" />
+        <Input onChange={changeInputAge} placeholder="Idade" />
 
         <Button onClick={addNewUser}>
           Cadastrar <img alt="seta" src={Arrow} />
