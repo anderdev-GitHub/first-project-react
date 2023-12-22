@@ -43,7 +43,8 @@ const App = () => {
   // A minha aplicação inicia ( A pagina carregou, useEffect é chmado!)
   // Quando um estado que está no array de dependencia do userEffect e alterado
 
-  const deleteUser = (userId) => {
+  const deleteUser = async (userId) => {
+    await axios.delete(`http://localhost:3001/users/${userId}`)
     const newUsers = users.filter((user) => user.id !== userId);
     setUsers(newUsers);
   };
