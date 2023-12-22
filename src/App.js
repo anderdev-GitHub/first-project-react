@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import People from "./assets/people.svg";
 import Arrow from "./assets/arrow.svg";
@@ -21,17 +21,27 @@ const App = () => {
   const inputAge = useRef();
 
   const addNewUser = async () => {
-    /*  const { data: newUser } = await axios.post("http://localhost:3001/users", {
+     const { data: newUser } = await axios.post("http://localhost:3001/users", {
       name: inputName.current.value,
       age: inputAge.current.value,
     });
 
-    setUsers([...users, newUser]); */
-
-    const {data: newUsers} = await axios.get("http://localhost:3001/users");
-
-    setUsers(newUsers);
+    setUsers([...users, newUser]);
   };
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      const { data: newUsers } = await axios.get("http://localhost:3001/users");
+
+      setUsers(newUsers);
+    };
+
+    fetchUsers();
+  }, []);
+
+  // REACT HOOK => useEffect (Efeito Colateral)
+  // A minha aplicação inicia ( A pagina carregou, useEffect é chmado!)
+  // Quando um estado que está no array de dependencia do userEffect e alterado
 
   const deleteUser = (userId) => {
     const newUsers = users.filter((user) => user.id !== userId);
