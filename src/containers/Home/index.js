@@ -19,7 +19,7 @@ const App = () => {
   const inputAge = useRef();
 
   const addNewUser = async () => {
-     const { data: newUser } = await axios.post("http://localhost:3001/users", {
+    const { data: newUser } = await axios.post("http://localhost:3001/users", {
       name: inputName.current.value,
       age: inputAge.current.value,
     });
@@ -42,7 +42,6 @@ const App = () => {
         <Button onClick={addNewUser}>
           Cadastrar <img alt="seta" src={Arrow} />
         </Button>
-
       </ContainerItens>
     </Container>
   );

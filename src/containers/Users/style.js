@@ -26,7 +26,7 @@ export const ContainerItens = styled.div`
   );
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(22.5px);
+  backdrop-filter: blur(22.5px);
 
   padding: 50px 36px;
 
@@ -52,7 +52,7 @@ export const Button = styled.button`
   background: transparent;
   cursor: pointer;
   margin-top: 120px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
 
   color: #fff;
   font-size: 17px;
@@ -74,7 +74,7 @@ export const Button = styled.button`
   }
 
   img {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 `;
 

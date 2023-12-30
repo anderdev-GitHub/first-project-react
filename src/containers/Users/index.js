@@ -4,14 +4,7 @@ import Avatar from "../../assets/avatar.svg";
 import Arrow from "../../assets/arrow.svg";
 import Trash from "../../assets/trash.svg";
 
-import {
-  Container,
-  H1,
-  Image,
-  ContainerItens,
-  Button,
-  User,
-} from "./style";
+import { Container, H1, Image, ContainerItens, Button, User } from "./style";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -31,7 +24,7 @@ const Users = () => {
   // Quando um estado que está no array de dependencia do userEffect e alterado
 
   const deleteUser = async (userId) => {
-    await axios.delete(`http://localhost:3001/users/${userId}`)
+    await axios.delete(`http://localhost:3001/users/${userId}`);
     const newUsers = users.filter((user) => user.id !== userId);
     setUsers(newUsers);
   };
@@ -53,9 +46,8 @@ const Users = () => {
           ))}
         </ul>
 
-        
         <Button>
-        <img alt="seta" src={Arrow} /> Voltar 
+          <img alt="seta" src={Arrow} /> Voltar
         </Button>
       </ContainerItens>
     </Container>
