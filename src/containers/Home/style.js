@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Background from "../../assets/background1.svg";
-import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   min-height: 100vh;
@@ -32,6 +31,9 @@ export const ContainerItens = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  height: 100%;
+  min-height: calc(100vh - 170px);
 `;
 
 export const H1 = styled.h1`
@@ -76,7 +78,7 @@ export const Input = styled.input`
   line-height: normal;
 `;
 
-export const Button = styled(Link)`
+export const Button = styled.button`
   width: 342px;
   height: 74px;
   margin-top: 130px;
@@ -96,6 +98,8 @@ export const Button = styled(Link)`
   align-items: center;
   justify-content: center;
   gap: 20px;
+  
+  transition: transform 0.1s;
 
   &:hover {
     opacity: 0.8;
@@ -103,5 +107,6 @@ export const Button = styled(Link)`
 
   &:active {
     opacity: 0.5;
+    transform: scale(1.1);
   }
 `;
