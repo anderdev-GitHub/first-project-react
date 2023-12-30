@@ -39,9 +39,10 @@ const App = () => {
         <InputLabel>Idade</InputLabel>
         <Input ref={inputAge} placeholder="Idade" />
 
-        <Button onClick={addNewUser}>
+        <Button to="/usuarios" onClick={addNewUser}>
           Cadastrar <img alt="seta" src={Arrow} />
         </Button>
+
       </ContainerItens>
     </Container>
   );
