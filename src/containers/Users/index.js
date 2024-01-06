@@ -5,7 +5,9 @@ import Avatar from "../../assets/avatar.svg";
 import Arrow from "../../assets/arrow.svg";
 import Trash from "../../assets/trash.svg";
 
-import { Container, H1, Image, ContainerItens, Button, User } from "./style";
+import H1 from '../../components/Title'
+
+import { Container, Image, ContainerItens, Button, User } from "./style";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
