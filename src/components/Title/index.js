@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 
-import {H1} from './style'
+import { H1 } from "./style";
 
-const Title = () => {
-    return <H1></H1>
-}
+const Title = (props) => {
+    console.log(props)
+  return <H1></H1>;
+};
 
-export default Title
+export default Title;
