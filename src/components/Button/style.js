@@ -5,7 +5,7 @@ export const Button = styled.button`
   height: 74px;
   margin-top: 130px;
 
-  border: $ { props => isBack ? '1px solid #fff' : 'none'};
+  border: ${(props) => (props.isBack ? "1px solid #fff" : "none")};
   border-radius: 14px;
   background: ${(props) =>
     props.isBack
