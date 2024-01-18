@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# First Project React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Experimente agora](https://first-project-react-register-users.netlify.app/)
 
-## Available Scripts
+<h3 align="center">
+  Bem-vindo ao First Project React!
+</h3>
 
-In the project directory, you can run:
+<br>
 
-### `yarn start`
+<p align="center">
+  <a href="#house-sobre-o-projeto">Sobre o Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#gear-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#ballot_box_with_check-requisitos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#white_check_mark-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#arrow_forward-executando-a-aplicação">Executando a Aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#open_book-como-usar">Como Usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#zap-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#balance_scale-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#man_technologist-autor">Autor</a>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="center">
+  <img width="960" height="540" alt="Layout" src="url-para-demo-do-projeto.gif">
+</p>
+<br>
 
-### `yarn test`
+## :house: Sobre o Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O First Project React é a minha primeira aplicação React desenvolvida como parte de apredizagem do curso Fullstack Pro - Dev Club. O projeto consiste em duas funcionalidades principais: cadastro de usuários e listagem/exclusão de usuários.
 
-### `yarn build`
+## :gear: Funcionalidades
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Cadastro de Usuários
+- Página inicial apresenta um formulário para inserção do nome e idade do usuário.
+- Ao clicar no botão "Cadastrar", os dados são enviados para uma [API](https://github.com/anderdev-GitHub/dev-club-first-project-node), e o novo usuário é adicionado à lista local.
+- O usuário é redirecionado para a página de listagem de usuários.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Listagem/Exclusão de Usuários
+- A página de usuários exibe a lista de usuários cadastrados, incluindo nome e idade.
+- Cada usuário tem um botão de exclusão, que remove o usuário da lista local e da API.
+- O botão "Voltar" redireciona o usuário para a página inicial.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :ballot_box_with_check: Requisitos
 
-### `yarn eject`
+1. Node.js
+2. React
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## :white_check_mark: Instalação
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone o repositório:
+   ```
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Instale as dependências:
+   ```
+   yarn install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## :arrow_forward: Executando a Aplicação
+Execute o seguinte comando no terminal:
+```
+yarn start
+```
 
-## Learn More
+## :open_book: Como Usar
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Abra a aplicação no navegador.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Preencha o formulário na página inicial para cadastrar um novo usuário.
 
-### Code Splitting
+3. Veja a lista de usuários na página de usuários, onde é possível excluir usuários individualmente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## :zap: Tecnologias
 
-### Analyzing the Bundle Size
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-badge&logo=html5&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-badge&logo=javascript&logoColor=black)
+- ![React](https://img.shields.io/badge/React-61DAFB?style=flat-badge&logo=react&logoColor=white)
+- ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat-badge&logo=react-router&logoColor=white)
+- ![Axios](https://img.shields.io/badge/Axios-000000?style=flat-badge&logo=axios&logoColor=white)
+- ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=flat-badge&logo=styled-components&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-badge&logo=css3&logoColor=white)
+- ![Yarn](https://img.shields.io/badge/Yarn-20232A?style=flat&logo=yarn&logoColor=2C8EBB)
+- ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-badge&logo=node.js&logoColor=white)
+ 
+## :balance_scale: Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Este projeto é de código aberto e está sob a Licença MIT. Você é livre para usar, modificar e distribuir este projeto de acordo com os termos da licença.
 
-### Making a Progressive Web App
+## :man_technologist: Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feito com ♥ por Anderson Leite :wave: [Entre em contato!](https://www.linkedin.com/in/andersondiasleite/)
